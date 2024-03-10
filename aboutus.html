@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutus</title>
+<style>
+   body{
+   background-color: burlywood;
+
+  
+    }
+    
+ #div1{
+    padding: 0;
+    height: 100px;
+   background-color: black;
+}
+header{
+    padding: 0;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+ }
+li {
+    display: inline;
+    align-items: center;
+}
+H1{
+    color: white;
+    padding: 400px;
+   
+} 
+a {
+    color:white;
+    font-size: large;
+    text-decoration: none; 
+    padding-right: 50px; 
+}
+ span{
+    display: block; 
+    text-align: center; 
+    margin-top: 16%; 
+    font-size: 100px;
+    font-weight: 600;
+    
+}
+
+h2{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-weight: 700;
+   text-align: center;
+   font-size: 50px;
+   color: black;
+}
+h3{
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    padding-right: 20px;
+ }
+/* p.one{
+font-weight: 100px;
+font-size: 50px;
+margin-left: 250px;
+color: blue;
+font-weight: 100;
+
+}
+p.two{
+    clear: both;
+    text-align: center;
+    color:blue;
+    font-size: 25px;
+    font-weight: weight;
+}     */
+     
+.slider {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-image: url('default.jpg'); /* Default background image */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.column {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.column h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.column p {
+    color: #666;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    height:10%;
+    width: 100%;
+   text-align: center;
+}
+
+.social-icons img {
+    width: 30px; 
+    margin: 0 5px; }
+  
+
+
+.prevBtn, .nextBtn {
+    position: absolute;
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider img {
+    width: 100%;
+    display: block;
+}
+
+.prevBtn, .nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prevBtn {
+    left: 10px;
+}
+
+.nextBtn {
+    right: 10px;
+}
+
+    @media only screen and (max-width: 768px) {
+        .item {
+            width: 45%;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .item {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div id="div1">
+        <header class="header">
+           <h1>HOME DECOR</h1>
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="aboutus.html">about us</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="contactus.html">contact us</a></li>
+            
+        </ul>    
+        </header>
+    </div>
+    <br>
+    <h2>ABOUT US !</h2>
+    <br>
+    <h3>
+        ABOUT LUXURY
+        </h3>
+        
+        <!-- <div class="slider-container">
+            <div class="slider">
+                <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1643383.jpg&fm=jpg" alt="Image 1">
+                <img src="https://media.designcafe.com/wp-content/uploads/2023/01/31151510/contemporary-interior-design-ideas-for-your-home.jpg" alt="Image 2">
+                <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Image 3">
+            </div>
+            <button class="prevBtn">&#10094;</button>
+            <button class="nextBtn">&#10095;</button>
+        </div> -->
+        
+        
+        <div class="slider-container">
+            <div class="slider">
+                <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Image 1">
+                <img src="https://media.designcafe.com/wp-content/uploads/2023/01/31151510/contemporary-interior-design-ideas-for-your-home.jpg" alt="Image 2">
+                <img src="https://t3.ftcdn.net/jpg/03/73/51/06/360_F_373510690_cQQLplLNbi0l84A7sftZq8dSvdKOGCcj.jpg" alt="Image 3">
+            </div>
+            <button class="prevBtn">&#10094;</button>
+            <button class="nextBtn">&#10095;</button>
+        </div>
+        
+    
+        <div class="content">
+            <div class="column">
+                <h2>Our History</h2>
+                <p>Begin by sharing the founding story of your business. Describe the inspiration behind its creation, including any challenges or milestones encountered along the way. This personal touch helps establish a connection with visitors..</p>
+            </div>
+            <div class="column">
+                <h2>What We Do</h2>
+                <p>Provide a brief overview of the primary services or products your business offers. This gives visitors a clear understanding of what you specialize in..</p>
+            </div>
+            <div class="column">
+                <h2>Why Choose Us</h2>
+                <p>Highlight the quality of your products or services. Explain how your offerings stand out in terms of durability, craftsmanship, uniqueness, or any other relevant factor..</p>
+            </div>
+        </div>
+        
+        <button id="nextBtn">Next</button>
+
+       <footer>
+        <br>
+<div class="social-icons">
+    <a href="#" target="_blank"><img src="https://toppng.com/uploads/preview/facebook-black-white-icon-facebook-face-book-png-facebook-icon-for-footer-11562873944v8l8yjbnby.png" alt="Facebook"></a>
+    <a href="#" target="_blank"><img src="https://i.pinimg.com/474x/2c/8c/6f/2c8c6fb02155d85cedf9fc71a53556c7.jpg" alt="Twitter"></a>
+    <a href="#" target="_blank"><img src="https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg" alt="Instagram"></a>
+</div>
+        &copy; 2024 HOME DECOR. All rights reserved.
+    </footer>
+        
+    <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    const prevBtn = document.querySelector('.prevBtn');
+    const nextBtn = document.querySelector('.nextBtn');
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slider img');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? 'block' : 'none';
+        });
+    }
+
+    function goToPrevSlide() {
+        currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+        showSlide(currentIndex);
+    }
+
+    function goToNextSlide() {
+        currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+        showSlide(currentIndex);
+    }
+
+    prevBtn.addEventListener('click', goToPrevSlide);
+    nextBtn.addEventListener('click', goToNextSlide);
+
+    // Show the first slide initially
+    showSlide(currentIndex);
+});
+    </script>
+</body>
+</html>
